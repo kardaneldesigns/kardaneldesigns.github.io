@@ -1,0 +1,619 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+/* FONTS */
+/*
+font-family: mr-eaves-modern,sans-serif;
+font-weight: 200, 300, 400, 700;
+font-style: normal;
+*/
+@font-face {
+  font-family: 'Reysha';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Reysha'), url('Reysha.woff') format('woff');
+}
+body {
+  background-color: #0D3757;
+  color: #082542;
+  font-size: 16px;
+  font-family: 'mr-eaves-modern', sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+  overflow-x: hidden;
+  position: relative;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+ color: #BD905B;
+}
+
+a.sectionLink {
+  display: block;
+  position: relative;
+  top: -8em;
+  visibility: hidden;
+}
+
+/* HEADER AND NAV */
+
+header {
+  position: fixed;
+  z-index: 99;
+  background-image: linear-gradient(to right,#082542 , #0D3757);
+  padding: 1em;
+  color: white;
+  height: 8em;
+  width: 100vw;
+}
+.logo {
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  max-width: 30%;
+  padding-bottom: 1em;
+}
+.topNav {
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+}
+.topNav a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 0 1em;
+}
+.topNav a:hover {
+  color: #BD905B;
+}
+li {
+  padding: 0 1em;
+}
+ul {
+  list-style-type: none;
+}
+main {
+  background-color: white;
+  height: 100%;
+}
+.coverImg {
+  display: block;
+  position: relative;
+  top: 0;
+  background-image: url(images/web-macbook-mockup-1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 65vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.pgDivider {
+  background-image: url(images/pageDivider.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: block;
+  width: 105vw;
+  height: 10vh;
+  position: relative;
+  top: -4em;
+  left: -2.5vw;
+  overflow: hidden;
+}
+
+
+/* SERVICES ICONS */
+.servicesTitle {
+  padding: 0;
+  position: relative;
+  top: -0.5em;
+}
+.services-container {
+  display: block;
+  position: relative;
+  width: 100vw;
+  height: auto;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 3em;
+  border-bottom: 0.3em solid #082542;
+}
+.circles {
+  display: inline-flex;
+  flex-wrap: wrap;
+  float: left;
+  background-color: #082542;
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  margin: 0 1em 0.5em 1em;
+  overflow: hidden;
+}
+.circles:hover {
+  background-color: #BD905B;
+  border: 3px solid #082542;
+}
+.circles:active {
+  background-color: #BD905B;
+}
+.icons {
+  margin: auto;
+  width: auto;
+  height: 2em;
+}
+.iconText {
+  display: inline-block;
+  flex-wrap: wrap;
+  text-align: center;
+  line-height: 1;
+  font-weight: 700;
+}
+.iconHeading {
+  color: #082542;
+}
+
+/* ABOUT ME BAR */
+
+.about-container {
+  display: block;
+  position: relative;
+  height: auto;
+  width: 100vw;
+  padding-left: 2em;
+}
+.about-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h2 {
+  font-family: 'Reysha', script;
+  color: #BD905B;
+  font-size: 50pt;
+  font-weight: lighter;
+  padding-top: 0.5em;
+}
+h3 {
+  position: relative;
+  font-weight: 200;
+  font-size: 30pt;
+  top: -0.8em;
+  left: 1em;
+}
+h4 {
+  position: relative;
+  top: -1em;
+  color: #BD905B;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+p {
+  font-weight: 200;
+  font-size: 12pt;
+  margin-bottom: 0.5em;
+}
+.profileImgBorder {
+  float: right;
+  width: 40vw;
+  height: 40vh;
+  background: #BD905B;
+  clip-path: polygon(29% 0, 100% 0, 100% 100%, 0 100%);
+}
+.profileImg {
+  float: right;
+  background-image: url(images/IMG_5318\ 2.png);
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  width: 38vw;
+  height: 39vh;
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%)
+}
+.bio {
+  padding-right: 2em;
+  padding-bottom: 2em;
+}
+
+/* PORTFOLIO */
+.portfolio-container {
+  background-image: url(images/kardaneldesigns_16.9\ bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  width: 100vw;
+}
+h5 {
+  font-family: 'Reysha', script;
+  font-weight: normal;
+  font-style: normal;
+  color: white;
+  font-size: 40pt;
+  padding-top: 0.5em;
+  text-align: center;
+}
+.iconHeading {
+  font-weight: 700;
+}
+.pGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1em 0;
+}
+.pColumn {
+  width: 45vw;
+  box-sizing: border-box;
+}
+.pImages {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 0.25em;
+}
+.overlayContain {
+  position: relative;
+  width: 100%;
+  max-width: 45vw;
+  padding: 0;
+  margin: 0;
+}
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  background-color: #0D3757;
+  color: white;
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+  opacity: 0;
+  padding: 2em;
+  text-align: center;
+  font-size: 3vw;
+}
+.overlayContain:hover .overlay {
+  opacity: 0.8;
+}
+
+.arrow-container {
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+.dividerarrow-up {
+  background-image: url(images/dividerarrow-up.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: block;
+  width: 110vw;
+  height: 10vh;
+  position: relative;
+  top: 2em;
+  left: -5vw;
+  overflow: hidden;
+}
+
+/* CONTACT ME */
+.contactForm form {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  width: 60%;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+.contactTitle {
+  display: block;
+  width: 30vw;
+  margin: 2em auto;
+  height: 3em;
+  position: relative;
+  left: -30px;
+}
+.h2-contact {
+  position: relative;
+  display: block;
+  top: -100px;
+  left: 80px;
+  font-size: 60pt;
+  font-weight: normal;
+}
+.h3-contact {
+  position: relative;
+  display: block;
+  top: 0;
+  left: 0;
+  line-height: 0.8;
+  font-size: 30pt;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  height: 3em;
+  padding: 1em;
+  border: 2px solid #082542;
+  margin: 1em 0;
+  border-radius: 1.5em;
+  resize: none;
+  font-family: "mr-eaves-modern",sans-serif;
+  font-weight: 400;
+  color: #0D3757;
+  font-size: 10pt;
+}
+input[type=email] {
+  width: 100%;
+  height: 3em;
+  padding: 1em;
+  border: 2px solid #082542;
+  margin: 1em 0;
+  border-radius: 1.5em;
+  resize: none;
+  font-family: "mr-eaves-modern",sans-serif;
+  font-weight: 400;
+  color: #0D3757;
+  font-size: 10pt;
+}
+textarea {
+  height: 8em;
+  border-radius: 1em;
+  resize: vertical;
+}
+select {
+  height: 2em;
+  font-family: "mr-eaves-modern",sans-serif;
+  font-weight: 400;
+  color: #0D3757; 
+}
+#fname {
+  width: 48%;
+  display: inline-block;
+  margin-right: 0.5em;
+}
+#lname {
+  width: 48%;
+  display: inline-block;
+}
+input[type=submit] {
+  background-color: #BD905B;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0.5em 3em;
+  border-radius: 1em;
+  font-family: "mr-eaves-modern",sans-serif;
+  font-weight: 700;
+  font-size: 10pt;
+}
+input[type=submit]:hover {
+  background-color: #082542;
+}
+::placeholder {
+  font-family: "mr-eaves-modern",sans-serif;
+  font-weight: 400;
+  color: #0D3757; 
+}
+
+
+footer {
+  display: block;
+  position: relative;
+  background-color: black;
+  color: white;
+  height: 4em;
+  width: 100%;
+  text-align: center;
+  padding: 1em;
+  margin: 0;
+}
+
+/* SCREEN LARGER SETTINGS */
+@media screen and (min-width: 768px) {
+  a.sectionLink {
+    top: -11em;
+  }
+  .logo {
+    float: left;
+    margin-left: 15%;
+    max-width: 20%;
+  }
+  header {
+    max-height: 12em;
+    height: auto;
+  }
+  .topNav {
+    margin:  0;
+  }
+  .topNav a {
+    display: inline-block;
+    font-size: 20pt;
+    margin: 5% 0;
+  }
+  .coverImg {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  .pgDivider {
+    background-image: url(images/pageDivider@2x.png);
+    background-size: cover;
+    background-position: center;
+    width: 105vw;
+    height: 25vh;
+    position: relative;
+    top: -16vh;
+    left: -2.5vw;
+  }
+  .servicesTitle {
+    font-size: 80pt;
+  }
+  .circles {
+    width: 10em;
+    height: 10em;
+    margin: 0 3em 0.5em 3em;
+  }
+  .icons {
+    height: 4em;
+  }
+  .iconHeading {
+    font-size: 20pt;
+  }
+  
+  .about-container {
+    height: auto;
+    padding-left: 4em;
+  }
+
+  h2 {
+    font-size: 80pt;
+    padding-top: 0.5em;
+  }
+  h3 {
+    font-size: 40pt;
+    top: -0.8em;
+    left: 1em;
+  }
+  h4 {
+    top: -1em;
+    font-size: 20pt;
+  }
+  p {
+    font-size: 16pt;
+  }
+  .profileImgBorder {
+    width: 42vw;
+    height: 80vh;
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%)
+  }
+  .profileImg {
+    background-image: url(images/IMG_5318\ 2@2x.png);
+    background-size: cover;
+    background-position: center;
+    background-position-y: -2em;
+    width: 40vw;
+    height: 80vh;
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%)
+  }
+  .bio {
+    column-count: 2;
+  }
+
+  .portfolio-container {
+    background-image: url(images/kardaneldesigns_16.9\ bg@2x.png);
+  }
+  h5 {
+    font-size: 80pt;
+  }
+  .pGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: 70vw;
+    padding: 1em 0;
+  }
+  .pColumn {
+    width: 30vw;
+    box-sizing: border-box;
+  }
+  .pImages {
+    width: 30vw;
+    height: auto;
+    overflow: hidden;
+    padding: 0.25em;
+  }
+
+  .contactForm form {
+    height: auto;
+    width: 40vw;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 2em 0;
+  }
+  .contactTitle {
+    width: 30vw;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    height: 4em;
+    left: 0;
+    top: -1em;
+  }
+  .h2-contact {
+    top: -1.25em;
+    left: 2em;
+    font-size: 80pt;
+  }
+  .h3-contact {
+    top: 0;
+    left: 2em;
+    font-size: 40pt;
+  }
+  input[type=text], select, textarea {
+    width: 80%;
+    height: 3em;
+    padding: 1em;
+    border: 3px solid #082542;
+    margin: 1em 0;
+    border-radius: 1em;
+    font-size: 14pt;
+  }
+  input[type=email] {
+    width: 80%;
+    height: 3em;
+    padding: 1em;
+    border: 3px solid #082542;
+    margin: 1em 0;
+    border-radius: 1em;
+    font-size: 14pt;
+  }
+  textarea {
+    height: 8em;
+    border-radius: 1em;
+    resize: vertical;
+  }
+  select {
+    height: 2em;
+  }
+  #fname {
+    width: 39%;
+    display: inline-block;
+    margin-right: 0.5em;
+  }
+  #lname {
+    width: 39%;
+    display: inline-block;
+  }
+  input[type=submit] {
+    padding: 0.5em 3em;
+    border-radius: 1em;
+    font-size: 14pt;
+  }
+
+  .dividerarrow-up {
+    background-image: url(images/dividerarrow-up@2x.png);
+    background-size: cover;
+    background-position: center;
+    width: 105vw;
+    height: 25vh;
+    position: relative;
+    top: 3vh;
+    left: -2.5vw;
+  }
+}
