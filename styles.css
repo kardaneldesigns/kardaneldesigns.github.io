@@ -448,6 +448,7 @@ footer {
     display: inline-block;
     font-size: 20pt;
     margin: 5% 0;
+    padding: 0 1em;
   }
   .coverImg {
     height: 100vh;
